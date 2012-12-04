@@ -15,6 +15,7 @@
 
 - (void)dealloc
 {
+    [_callbackBlock release];
     _callbackBlock = nil;
     
     [super dealloc];
@@ -29,8 +30,8 @@
     }
     
     _callbackBlock = nil;
-        //弱引用
-    _callbackBlock = block;
+        //强引用
+    _callbackBlock = [block copy];
     
     [self retain];
     
