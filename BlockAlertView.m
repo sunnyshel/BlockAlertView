@@ -1,8 +1,8 @@
 //
 //  BlockAlertView.m
-//  BlackList
+//  
 //
-//  Created by zhangtao on 12-12-4.
+//  Created by willonboy on 12-12-4.
 //  Copyright (c) 2012年 willonboy.tk. All rights reserved.
 //
 
