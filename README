@@ -1,0 +1,29 @@
+BlockAlertView wrap UIAlertView by block(bind a block as UIAlertView delegate) 
+
+
+USE LIKE :
+ 
+ BlockAlertView *blockAlert = [BlockAlertView new];
+ [blockAlert showAlertWithTitle:@"" msg:@"确定删除" callbackBlock:^(int btnIndex){
+ 
+    if (btnIndex == 0)
+    {
+        return ;
+    }
+    else if(btnIndex == 1)
+    {
+        NSLog(@"正在删除");
+    }
+ 
+ } cancelButtonTitle:@"取消" otherButtonTitles:@"确定", nil];
+ 
+ [blockAlert release]; 
+
+
+
+
+ by willonboy
+
+ site:http://willonboy.tk
+ skype:willonboy.zhang
+ qq:962286684
